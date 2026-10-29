@@ -7,6 +7,13 @@ services:
       - db
     ports:
       - "3000"
+    environment:
+      - DB_NAME=${db-name}
+      - DB_HOST=${db-host}
+      - DB_USER=${db-user}
+      - DB_PASS=${db-password}
+      - APP_PORT=${app-port}
+
     volumes:
       - app-data:/apps/public/images
 
