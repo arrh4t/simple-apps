@@ -1,4 +1,4 @@
-pipeline {
+'''pipeline {
     agent { label 'devops1-zakaria' }
 
     stages {
